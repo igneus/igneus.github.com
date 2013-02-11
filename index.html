@@ -17,7 +17,11 @@
       border: solid black 1px;}
 
       h1, h2 {text-align: right;}
-      h2 {margin-top: 40px;}
+      h2 {margin-top: 40px; background-color: black; color: white;
+      position: relative; padding: 0px 20px 0px 20px;
+      width: 300px;}
+      h2:nth-of-type(odd) {left: 300px;}
+      h2:nth-of-type(even) {left: -40px; text-align: left;}
 
       li {margin-top: 5px;}
 
