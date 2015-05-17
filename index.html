@@ -38,6 +38,9 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       a { text-decoration: underline; }
       a, a:link, a:active { color: #9c8198; }
       a:hover { text-decoration: none; }
+
+      .fr { float: right; }
+      .large { font-size: 140%; }
     </style>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'/>
@@ -49,45 +52,54 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       <h1>Jakub Pavlík</h1>
 
       <p>
-				Theologian who programs for a living.<br/>
-        Prague, Czech Republic.
+				programmer &mdash; typesetter &mdash; theologian<br/>
+        Prague, Czech Republic
       </p>
       <p class="quote">
-				"Teologie ... to nemá s programováním nic společného, že ne?"<br/>
+				"<a href="#education">Teologie</a> ... to nemá s programováním nic společného, že ne?"<br/>
 				"Má. Mě."
       </p>
     </div>
 
     <div class="box">
-      <p>
-				Currently not looking for a job.
-      </p>
 
+      <div class="fr">more online work <a href="#online">below</a></div>
+      <a href="https://github.com/igneus">github</a>
+      <a href="https://bitbucket.org/igneus_cz">bitbucket</a>
+    </div>
+
+    <div class="box">
+      <p>
+        As of 30th June 2015 my employment at <a href="#topinfo">Topinfo</a> ends
+        and I am<br/> <b>looking for the next job.</b>
+      </p>
+    </div>
+
+    <div class="box">
       <h2>Contact</h2>
 
-      <ul>
-				<li>e-mail: <a href="mailto:jkb.pavlik@gmail.com">jkb.pavlik@gmail.com</a></li>
-      </ul>
+      <p>
+				e-mail: <a href="mailto:jkb.pavlik@gmail.com">jkb.pavlik@gmail.com</a>
+      </p>
 
       <h2>Working experience</h2>
 
       <table cellspacing="0">
 				<tr>
 					<td class="exp-label">Since Feb 2013</td>
-					<td>
-            <a name="topinfo"></a>
+					<td id="topinfo">
 						junior programmer
 						at <a href="http://topinfo.cz">Topinfo&nbsp;s&nbsp;r.o.</a>, 
 						Prague, Czech Republic
 
             <ul>
               <li>customer support of Topinfo CMS</li>
-              <li>occasional assignments on it's development</li>
-              <li>maintenance of web presentations and applications built on top of Topinfo CMS (programmed in Python)</li>
+              <li>occasional assignments on it's development (Python programming)</li>
+              <li>maintenance of web presentations and applications built on top of Topinfo CMS</li>
               <li>development of <a href="http://pesweb.cz">Pesweb.cz</a>
               (maintenance, a lot of post-release modifications and 
               extensions)</li>
-              <li>content coding (HTML, LESS/CSS, very basic processing of graphic content)</li>
+              <li>content coding (HTML, LESS/CSS)</li>
             </ul>
 					</td>
 				</tr>
@@ -101,7 +113,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 				</tr>
       </table>
 
-      <h2>Education</h2>
+      <h2 id="education">Education</h2>
 
       <table cellspacing="0">
         <tr>
@@ -135,8 +147,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 				<li>Czech (mother tongue)</li>
 				<li>German (fluent; the language I love)</li>
 				<li>English (spoken: less fluent; written: quite good; reading: almost perfect)</li>
-				<li>French (poor passive knowledge)</li>
-				<li>Latin, New Testament Greek :) (intermediate passive knowledge)</li>
+				<li>Latin, New Testament Greek <span class="large">&#x263a;</span> (intermediate passive knowledge)</li>
       </ul>
 
       <p>
@@ -152,8 +163,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 						<li>
 							Linux (effective usage, basic administration)
 							<ul>
-								<li>since 2011 Debian has been my exclusively used distro</li>
-								<li>earlier I used Mandrake, Fedora Core and Gentoo</li>
+								<li>since 2011 I have sticked to Debian</li>
 								<li>
 									<a href="http://awesome.naquadah.org/">awesome</a>
 									is the window manager of my choice
@@ -175,9 +185,9 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                 <li>Rake</li>
 								<li>RSpec, Test::Unit, minitest</li>
 								<li>Sinatra</li>
+                <li>Rails</li>
                 <li>REXML, nokogiri</li>
 								<li>mechanize</li>
-                <li>Rails (basic experience only)</li>
                 <li>Capistrano</li>
 							</ul>
 						</li>
@@ -246,8 +256,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 					<ul>
 						<li>GNU/Emacs</li>
 						<li>
-							<a href="http://www.activestate.com/komodo-ide">Komodo IDE</a> -
-							commercial, used in the company where I am currently employed
+							<a href="http://www.activestate.com/komodo-ide">Komodo IDE</a>
 						</li>
 						<li>Aptana Studio</li>
 						<li>Netbeans IDE</li>
@@ -271,7 +280,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 							the <b>OOP</b>" - including those
 							who obviously do not; so I don't state I understand the OOP.
 							In case it was at some point of time important to know if 
-							and to which depth I do, my code (see below) should be studied.
+							and to which depth I do, my publicly available code should be studied.
 						</li>
 					</ul>
 				</li>
@@ -299,7 +308,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       </ul>
     </div>
 
-    <div class="box">
+    <div class="box" id="online">
 
       <h2>My work online</h2>
 
@@ -334,27 +343,6 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 					Software projects
 
 					<ul>
-						<li>
-							<a href="https://github.com/igneus">github :: 
-							https://github.com/igneus</a>
-							<p>
-								Small software projects, but also non-software content
-								worth of version control.
-								(Github autodetects most of the latter as "Ruby projects",
-								because they contain Ruby scripts automating various
-								tasks, e.g. for typesetting.)
-							</p>
-						</li>
-
-						<li>
-							<a href="https://bitbucket.org/igneus_cz">bitbucket ::
-							https://bitbucket.org/igneus_cz</a>
-							<p>
-								(I mostly host my <em>private</em> repos at bitbucket,
-								so there is not much to see yet.)
-							</p>
-						</li>
-
 						<li>
 							<a href="http://stopakladno.wz.cz/budebylo/bude.php">Budebylo</a>
 							<p>
@@ -410,8 +398,15 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
             <li>piano, guitar</li>
 					</ul>
 				</li>
-				<li>liturgy</li>
-				<li>the two above together</li>
+				<li>
+          liturgy
+          <ul>
+            <li>Liturgy of the Hours</li>
+            <li>history of the liturgy</li>
+            <li>rubrics and liturgical law</li>
+            <li>medieval rite of Prague</li>
+          </ul>
+        </li>
 				<li>Catholic theology</li>
 				<li>the world as seen by a pilgrim</li>
       </ul>
