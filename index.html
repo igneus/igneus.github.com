@@ -16,23 +16,23 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
       body {font-family: 'Inconsolata', monospace; }
       .box, #footer {margin: 30px auto 30px auto; width: 600px;}
-      .box {background-color: white; padding: 20px;
-      border: solid black 1px;}
+      .box {background-color: white; padding: 3px 0 3px 30px;
+      border-left: solid #333 2px;}
 
       h1 {text-align: right;}
-      h2:first-child { margin-top: 0; }
+      h2 { margin-top: 1.7em; }
+      h1:first-child, h2:first-child { margin-top: 0; }
 
       li {margin-top: 5px;}
       ul.loose li {margin-top: 20px; margin-bottom: 30px;}
 
       table {border-collapse: collapse;}
       table td {/*border: solid black 1px;*/ vertical-align: top; padding: 8px;}
-      td.exp-label {width: 130px; text-align: right; font-weight: bold;}
+      td.exp-label {width: 120px; text-align: right; font-weight: bold;}
 
-      p.quote {font-style: italic; text-align: right; margin-top: 20px;}
+      p.quote {font-style: italic; font-size: 90%; margin-top: 20px;}
 
       a { text-decoration: underline; }
-      a, a:link, a:active { color: #9c8198; }
       a:hover { text-decoration: none; }
 
       .fr { float: right; }
@@ -54,14 +54,13 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       <p>
         Prague, Czech Republic
       </p>
-    </div>
 
-    <div class="box" id="repo">
-      <div class="fr">more online work <a href="#online">below</a></div>
-      <a href="https://github.com/igneus">github</a>
-      <a href="https://bitbucket.org/igneus_cz">bitbucket</a>
-      <a href="https://rubygems.org/profiles/igneus">rubygems</a>
-      <a href="http://stackoverflow.com/users/2034213/jakub-pavl%C3%ADk">stackoverflow</a>
+      <p id="repo">
+        <a href="https://github.com/igneus">github</a>
+        <a href="https://bitbucket.org/igneus_cz">bitbucket</a>
+        <a href="https://rubygems.org/profiles/igneus">rubygems</a>
+        <a href="http://stackoverflow.com/users/2034213/jakub-pavl%C3%ADk">stackoverflow</a>
+      </p>
     </div>
 
     <div class="box">
@@ -117,7 +116,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       </table>
 
       <p class="quote">
-        "Teologie ... to nemá s programováním nic společného, že ne?"<br/>
+        "Teologie ... to nemá s programováním nic společného, že ne?"
         "Má. Mě." <span class="large">&#x263a;</span>
       </p>
     </div>
@@ -214,9 +213,6 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                     <li>JQuery</li>
                     <li>Angular JS (only limited experience)</li>
                   </ul>
-                </li>
-                <li>
-                  CoffeeScript
                 </li>
               </ul>
             </li>
