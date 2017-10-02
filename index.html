@@ -115,8 +115,8 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
           <td>
             Master programme "Catholic Theology" at the Catholic Theological Faculty, Charles University, Prague.
             Terminated without reaching the degree.
-            I <a href="#topinfo">started working fulltime</a>
-            in 2013 and didn't manage to finish my thesis.
+            2013 I <a href="#topinfo">started working fulltime</a>
+            and didn't manage to finish my thesis.
           </td>
         </tr>
 
@@ -240,7 +240,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
           <ul>
             <li>git</li>
             <li>mercurial</li>
-            <li>cvs (it's what I started with; never more regularly used)</li>
+            <li>cvs (it's what I once started with; never more regularly used)</li>
           </ul>
         </li>
 
@@ -263,21 +263,45 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
       <h3>Active software projects</h3>
       <p>
-        Most of my active personal software projects
-        are in one way or another
-        related to my activities in the field of church music
-        (composition, typesetting, research).
+        My active personal projects crystalize around two main topics:
       </p>
+      <ol>
+        <li>Church calendar</li>
+        <li>Liturgical music and hymnal typesetting</li>
+      </ol>
 
-      <h4>1. Web apps</h4>
+      <h4>1. Church calendar</h4>
       <ul class="loose">
+        <li>
+          <a href="https://github.com/igneus/calendarium-romanum">calendarium-romanum</a>
+          <p>
+            Ruby gem aspiring to become the most complete
+            FOSS implementation of the Roman Catholic liturgical calendar.
+          </p>
+        </li>
+
         <li>
           <a href="http://calapi.inadiutorium.cz/">Church Calendar API</a>
           <p>
-            My Ruby gem
-            <a href="https://github.com/igneus/calendarium-romanum">calendarium-romanum</a>
-            computes Roman Catholic liturgical calendar.
-            The API uses it to make calendar data available online.
+            Public calendar API built on top of calendarium-romanum.
+            Makes results computed by calendarium-romanum available
+            to applications written in languages other than Ruby.
+          </p>
+        </li>
+
+      </ul>
+
+      <h4>2. Liturgical music</h4>
+      <ul class="loose">
+        <li>
+          <a href="http://www.inadiutorium.cz">In adiutorium ::
+          http://www.inadiutorium.cz</a>
+          <p>
+            Web presentation of my musical settings
+            of the Catholic
+            <a href="http://en.wikipedia.org/wiki/Liturgy_of_the_Hours">Divine Office</a>
+            in Czech translation + comprehensive catalogue of
+            other existing musical settings.
           </p>
         </li>
 
@@ -291,33 +315,29 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
             thus turning a "breviary" in an "antiphonal".
           </p>
         </li>
-      </ul>
 
-      <h4>2. Text processing tools</h4>
-      <ul class="loose">
         <li>
           <a href="https://github.com/igneus/gly">gly</a>
           <p>
-            Gregorio, a de facto standard tool for gregorian chant
-            typesetting, has an ugly and impractical input format.
-            Gly translates a more convenient input format
-            to the canonical one.
+            My custom language for encoding of gregorian chant +
+            it's translator to gabc
+            (a de facto standard language for the same purpose,
+            but not very user-friendly).
           </p>
         </li>
 
         <li>
           <a href="https://github.com/igneus/lygre">grely</a>
           <p>
-            Translates Gregorio scores to Lilypond.
-            Leverages a PEG parser of Gregorio input format.
+            Translates gabc scores to Lilypond.
+            Leverages a PEG parser of gabc.
           </p>
         </li>
 
         <li>
           <a href="https://github.com/igneus/pslm">pslm</a>
           <p>
-            Part of my typesetting toolbox:
-            automates pointing of psalm texts for various
+            Automates pointing of psalm texts for various
             chant tunes.
           </p>
         </li>
@@ -348,19 +368,6 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
             might be the oldest (or at least the oldest publicly
             available) bit of Ruby code written in the Czech
             Republic. If you happen to know an older one, please e-mail me.
-          </p>
-        </li>
-      </ul>
-
-      <h3>Websites</h3>
-      <ul class="loose">
-        <li>
-          <a href="http://www.inadiutorium.cz">In adiutorium ::
-          http://www.inadiutorium.cz</a>
-          <p>
-            Complete musical settings of the Czech translation of
-            Catholic <a href="http://en.wikipedia.org/wiki/Liturgy_of_the_Hours">Divine Office</a> + a comprehensive collection of
-            information concerning other existing musical settings.
           </p>
         </li>
       </ul>
