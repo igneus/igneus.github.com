@@ -17,7 +17,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       body {font-family: 'Inconsolata', monospace; }
       .box, #footer {margin: 30px auto 30px auto; width: 600px;}
       .box {background-color: white; padding: 3px 0 3px 30px;
-      border-left: solid #333 2px;}
+      border-left: solid #999 1px;}
 
       h1 {text-align: right;}
       h2 { margin-top: 1.7em; }
@@ -27,7 +27,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       ul.loose li {margin-top: 20px; margin-bottom: 30px;}
 
       table {border-collapse: collapse;}
-      table td {/*border: solid black 1px;*/ vertical-align: top; padding: 8px 16px 8px 0;}
+      table td {vertical-align: top; padding: 8px 16px 8px 0;}
       td.exp-label {width: 120px; text-align: right; font-weight: bold;}
 
       p.quote {font-style: italic; font-size: 90%; margin-top: 20px;}
@@ -49,6 +49,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       <h1>Jakub Pavlík</h1>
 
       <p>
+        software developer<br/>
         Ruby, Python, Linux, web-related technologies
       </p>
       <p>
@@ -56,10 +57,22 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       </p>
 
       <p id="repo">
-        <a href="https://github.com/igneus">github</a>
-        <a href="https://bitbucket.org/igneus_cz">bitbucket</a>
-        <a href="https://rubygems.org/profiles/igneus">rubygems</a>
-        <a href="http://stackoverflow.com/users/2034213/jakub-pavl%C3%ADk">stackoverflow</a>
+        <a href="https://github.com/igneus" title="Where most of my open-source code resides">github</a>
+        <a href="https://bitbucket.org/igneus_cz" title="Mostly academic writing">bitbucket</a>
+        <a href="https://rubygems.org/profiles/igneus" title="I have published a handful or Ruby gems">rubygems</a>
+        <a href="http://stackoverflow.com/users/2034213/jakub-pavl%C3%ADk" title="My activity at SO is mostly limited to occasionally answering interesting questions laying unanswered for a long time.">stackoverflow</a>
+      </p>
+
+      <p>
+        Programmer and Linux user since high school years.
+        Automating all everyday tasks where it's doable
+        and profitable.
+        Most of programming career so far spent developing
+        web backends.
+        Believes in unit-testing and automated tests in general,
+        (only) at times practices orthodox TDD.
+        Enjoys doing and receiving code reviews and
+        working with legacy code. (Seriously.)
       </p>
     </div>
 
@@ -74,19 +87,24 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
       <table cellspacing="0">
         <tr>
-          <td class="exp-label">since July 2017</td>
+          <td class="exp-label">2017-2018</td>
           <td id="grand">
             programmer at <a href="https://www.epis.cz/kontakt">Grand&nbsp;s.r.o.</a><br/>
-            - PHP (Symfony 3)
+            - PHP programming:
+            developing new applications on top of Symfony;
+            refactoring and extending
+            legacy systems built on ancient versions of Drupal, Nette,
+            as well as "vanilla" PHP
           </td>
         </tr>
         <tr>
           <td class="exp-label">2015-2017</td>
           <td id="applifting">
             programmer at <a href="http://applifting.cz">Applifting&nbsp;s.r.o.</a><br/>
-            - Ruby programming, mostly on Rails:
+            - Ruby programming, mostly on Rails (+ one PHP project):
             backends for mobile and JS apps,
-            traditional web apps
+            traditional web apps,
+            third-party system integrations
           </td>
         </tr>
         <tr>
@@ -106,11 +124,6 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
       <table cellspacing="0">
         <tr>
-          <td class="exp-label">1999-2007</td>
-          <td>Gymnázium Kladno</td>
-        </tr>
-
-        <tr>
           <td class="exp-label">2007-2014</td>
           <td>
             Master programme "Catholic Theology" at the Catholic Theological Faculty, Charles University, Prague.
@@ -126,6 +139,11 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
             one semester at the Catholic Theological Faculty, University Erfurt (Germany)
           </td>
         </tr>
+
+        <tr>
+          <td class="exp-label">1999-2007</td>
+          <td>Gymnázium Kladno</td>
+        </tr>
       </table>
 
       <p class="quote">
@@ -135,27 +153,18 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     </div>
 
     <div class="box">
-      <h2>Languages</h2>
+      <h2>(Human) Languages</h2>
 
       <ul>
         <li>Czech (mother tongue)</li>
         <li>German (~B2)</li>
         <li>English (~B1)</li>
-        <li>Latin, New Testament Greek (intermediate passive knowledge)</li>
+        <li>Latin, New Testament Greek (intermediate, mostly passive knowledge)</li>
       </ul>
 
-      <h2>Types of work I have been up to</h2>
+      <h2>Tasks worked on</h2>
 
       <ul>
-        <li>
-          integrating payment gateways
-          (PayPal, Braintree, ChargeBee,
-          two different versions of GP Webpay SOAP API)
-        </li>
-        <li>
-          integrating other third-party APIs
-          (Mojio, Flexibee, ...)
-        </li>
         <li>
           Rails-based "classic web apps" and REST APIs,
           developed both independently and in cooperation with other
@@ -166,8 +175,40 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
           system of recurrent billing
         </li>
         <li>
-          taking over a project written in language and framework
-          I have never used before and developing it further
+          integrating payment gateways
+          (PayPal, Braintree, ChargeBee,
+          two different versions of GP Webpay SOAP API)
+        </li>
+        <li>
+          integrating other third-party APIs
+        </li>
+        <li>
+          desktop application automating mass-production of USB sticks
+          (udev, Python, WxWidgets)
+        </li>
+        <li>
+          taking over a commercial project written in language and
+          framework I have never used before and developing it further
+          (this way I started working with PHP 7 and Symfony)
+        </li>
+        <li>
+          updating legacy PHP 3 applications to run on PHP 7;
+          identifying and fixing critical security issues
+        </li>
+        <li>
+          modifying and extending all kinds of legacy PHP applications
+          (built on top of ancient versions of the Nette framework,
+          Drupal 6,
+          as well as unwieldy vanilla PHP)
+        </li>
+        <li>
+          writing data processing and maintenance tasks
+          to be run on a moderately large database
+        </li>
+        <li>
+          setup and maintenance of Linux servers
+          and application deployment tooling
+          (this isn't what I'm good at and what I enjoy doing, though)
         </li>
       </ul>
 
@@ -185,21 +226,28 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
           Programming languages and their ecosystems
           <ul>
             <li>
-              Ruby - since 2004/5 my favourite scripting language
+              Ruby - since 2004/5 my favourite scripting language,
+              used for all kinds of tasks;
+              2 years of <a href="#applifting">industry experience</a>
             </li>
 
             <li>
               Python /^2\.[67]/ - 2.5 years of <a href="#topinfo">industry experience</a>
+              (I do know some Python 3, too,
+              but haven't used it in a commercial environment yet.)
             </li>
 
             <li>
               "Web frontend languages"
+              (I am not and don't aspire to become either a coder
+              or a frontend developer, but I am used to carry out
+              also simple frontend-related tasks)
               <ul>
-                <li>HTML (XHTML 1.0, HTML 5)</li>
+                <li>HTML (XHTML, HTML 5)</li>
                 <li>
                   CSS, LESS, SASS
                   <ul>
-                    <li>Bootstrap</li>
+                    <li>Bootstrap 3, 4 (worked with, mostly creating simple administration UIs)</li>
                   </ul>
                 </li>
                 <li>
@@ -212,8 +260,12 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
             </li>
 
             <li>
-              PHP - around 2002 my first programming language;
-              recently my secondary BE stack
+              PHP - around 2002 (with PHP 3, 4)
+              my first programming language;
+              recently my secondary BE stack;
+              2 years of
+              <a href="#applifting">industry</a>
+              <a href="#grand">experience</a>
               <ul>
                 <li>Symfony 3</li>
                 <li>Doctrine</li>
@@ -259,7 +311,13 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     </div>
 
     <div class="box" id="online">
-      <h2>Code online</h2>
+      <h2>Code online (highlights)</h2>
+      <p>
+        Most of my publicly available code is in personal hobby
+        projects. A few contributions to open-source projects
+        can be dug up at Github, but none of them is worth
+        a special mention.
+      </p>
 
       <h3>Active software projects</h3>
       <p>
@@ -278,6 +336,14 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
             Ruby gem aspiring to become the most complete
             FOSS implementation of the Roman Catholic liturgical calendar.
           </p>
+          <p class="petit">
+            (I plan to provide the same functionality also
+            as a <a href="https://github.com/calendarium-romanum/libcalrom">C library</a>,
+            but the project is currently stalled.)
+          </p>
+          <p>
+
+          </p>
         </li>
 
         <li>
@@ -286,6 +352,8 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
             Public calendar API built on top of calendarium-romanum.
             Makes results computed by calendarium-romanum available
             to applications written in languages other than Ruby.
+            Unlike most of my other projects, it seems to be
+            <a href="https://github.com/search?q=calapi.inadiutorium.cz&type=Code">somewhat popular</a>.
           </p>
         </li>
 
@@ -294,35 +362,12 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       <h4>2. Liturgical music</h4>
       <ul class="loose">
         <li>
-          <a href="http://www.inadiutorium.cz">In adiutorium ::
-          http://www.inadiutorium.cz</a>
-          <p>
-            Web presentation of my musical settings
-            of the Catholic
-            <a href="http://en.wikipedia.org/wiki/Liturgy_of_the_Hours">Divine Office</a>
-            in Czech translation + comprehensive catalogue of
-            other existing musical settings.
-          </p>
-        </li>
-
-        <li>
-          <a href="http://ean.inadiutorium.cz/">E-Antiphonal</a>
-          <p>
-            Web application proxying another web
-            (Czech Liturgy of the Hours on-line)
-            and extending it's content with my musical settings
-            of the rendered texts -
-            thus turning a "breviary" in an "antiphonal".
-          </p>
-        </li>
-
-        <li>
           <a href="https://github.com/igneus/gly">gly</a>
           <p>
-            My custom language for encoding of gregorian chant +
-            it's translator to gabc
-            (a de facto standard language for the same purpose,
-            but not very user-friendly).
+            My custom language for gregorian chant encoding,
+            optimized for user happiness and translating to gabc
+            (which is the de facto standard language for the same
+            purpose, but not very user-friendly).
           </p>
         </li>
 
@@ -339,23 +384,40 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
           <p>
             Automates pointing of psalm texts for various
             chant tunes.
+            Heavily used in my typesetting projects.
+          </p>
+        </li>
+
+        <li>
+          <a href="http://www.inadiutorium.cz">In adiutorium ::
+          http://www.inadiutorium.cz</a>
+          <p>
+            Web presentation of my musical settings
+            of the Catholic
+            <a href="http://en.wikipedia.org/wiki/Liturgy_of_the_Hours">Divine Office</a>
+            in Czech translation
+            + comprehensive catalogue of other existing musical
+            settings
+            + the place where I blog about Liturgy of the Hours,
+            liturgical music and related topics.
+          </p>
+        </li>
+
+        <li>
+          <a href="https://github.com/igneus/eantifonar">E-Antiphonal</a> ::
+          <a href="http://ean.inadiutorium.cz/">http://ean.inadiutorium.cz</a>
+          <p>
+            Web application proxying another web
+            (Czech Liturgy of the Hours on-line)
+            and extending it's content with my musical settings
+            of the rendered texts -
+            thus turning a "breviary" in an "antiphonal".
           </p>
         </li>
       </ul>
 
       <h3>Inactive software projects</h3>
       <ul class="loose">
-        <li>
-          <a href="http://stopakladno.wz.cz/budebylo/bude.php">Budebylo</a>
-          <p>
-            A small events calendar application
-            for a local scouts' group in Kladno.
-            (1 page of public frontend +
-            administration interface; PHP+MySQL;
-            in use since 2008; non-free, closed-source)
-          </p>
-        </li>
-
         <li>
           <a href="http://sourceforge.net/projects/freevikings/">freeVikings</a>
           <p>
@@ -366,7 +428,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
             A bit of vanity:
             <a href="http://freevikings.cvs.sourceforge.net/viewvc/freevikings/freeVikings/freevikings.rb?revision=1.1&view=markup">here</a>
             might be the oldest (or at least the oldest publicly
-            available) bit of Ruby code written in the Czech
+            available) bit of Ruby code written in Czech
             Republic. If you happen to know an older one, please e-mail me.
           </p>
         </li>
