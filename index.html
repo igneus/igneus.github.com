@@ -24,7 +24,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       h1:first-child, h2:first-child { margin-top: 0; }
 
       li {margin-top: 10px;}
-      ul.loose li {margin-top: 20px; margin-bottom: 30px;}
+      ul.loose > li {margin-top: 20px; margin-bottom: 30px;}
 
       table {border-collapse: collapse;}
       table td {vertical-align: top; padding: 8px 16px 8px 0;}
@@ -50,7 +50,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
       <p>
         software developer<br/>
-        Ruby, Python, Linux, web-related technologies
+        Ruby, Python, PHP, Linux, web-related technologies
       </p>
       <p>
         Kralupy nad Vltavou, Czech Republic
@@ -68,7 +68,6 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         web backends.
         Believes in unit-testing and automated tests in general,
         at times practices orthodox TDD.
-        Particularly enjoys working with legacy code. (Seriously.)
       </p>
     </div>
 
@@ -82,6 +81,13 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       <h2>Working experience</h2>
 
       <table cellspacing="0">
+        <tr>
+          <td class="exp-label">07-09/2023</td>
+          <td id="thinkeasy">
+            programmer at <a href="https://thinkeasy.cz/">ThinkEasy s.r.o.</a><br/>
+            - PHP programming
+          </td>
+        </tr>
         <tr>
           <td class="exp-label">2021</td>
           <td id="ipdgroup">
@@ -101,7 +107,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
           <td id="grand">
             programmer at <a href="https://www.epis.cz/kontakt">Grand&nbsp;s.r.o.</a><br/>
             - PHP programming:
-            developing new applications on top of Symfony;
+            developing new Symfony applications;
             refactoring and extending
             legacy systems built on ancient versions of Drupal, Nette,
             as well as "vanilla" PHP
@@ -212,12 +218,21 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
             </li>
 
             <li>
+              PHP - around 2002 the first programming language I ever learned;
+              recently <a href="#applifting">4 years</a> of <a href="#grand">industry</a> <a href="#clientigent">experience</a>
+              <ul>
+                <li>Symfony since version 3</li>
+                <li>Doctrine</li>
+              </ul>
+            </li>
+
+            <li>
               "Web frontend languages"
               (I am not and don't aspire to become either a coder
               or a frontend developer, but I am used to carry out
               also simple frontend-related tasks)
               <ul>
-                <li>HTML (XHTML, HTML 5)</li>
+                <li>HTML</li>
                 <li>
                   CSS, LESS, SASS
                   <ul>
@@ -227,7 +242,8 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                 <li>
                   JavaScript
                   <ul>
-                    <li>JQuery</li>
+                    <li>old style scripting with JQuery</li>
+                    <li>limited experience creating <a href="https://github.com/search?q=topic%3Abrowser-extension+user%3Aigneus&type=repositories">browser extensions</a></li>
                   </ul>
                 </li>
               </ul>
@@ -237,20 +253,15 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
               XML - I have a soft spot for XML and related technologies
               (XHTML, XSLT, XPath, XQuery, BaseX database, ...)
             </li>
-
-            <li>
-              PHP - around 2002 the first programming language I ever learned;
-              <a href="#applifting">4 years</a> of <a href="#grand">industry</a> <a href="#clientigent">experience</a>
-              <ul>
-                <li>Symfony 3, 4</li>
-                <li>Doctrine</li>
-              </ul>
-            </li>
           </ul>
         </li>
 
         <li>
           SQL (PostgreSQL, MySQL, SQLite 3) - basic knowledge &amp; experience
+        </li>
+
+        <li>
+          Docker - basic knowledge &amp; experience
         </li>
 
         <li>
@@ -268,50 +279,53 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     </div>
 
     <div class="box" id="online">
-      <h2>Code online (highlights)</h2>
-      <p>
-        Most of my publicly available code is in personal hobby
-        projects. A few contributions to open-source projects
-        can be dug up at Github, but none of them is worth
-        a special mention.
-      </p>
+      <h2>Code online</h2>
 
-      <h3>Active software projects</h3>
+      <h3>Contributions to third-party projects</h3>
       <p>
-        My active personal projects crystalize around two main topics:
+        They are all just small insignificant stuff, but
+        as a proof of the fundamental skills related
+        to understanding and modifying code written by someone else
+        they should be sufficient.
+        Many more minor contributions can be dug up by browsing
+        the activity log of my Github profile.
       </p>
-      <ol>
-        <li>Church calendar</li>
-        <li>Liturgical music and hymnal typesetting</li>
-      </ol>
+      <ul>
+        <li>enhancements for the <a href="https://github.com/matthiasnoback/symfony-console-form/pulls?utf8=%E2%9C%93&q=is%3Apr+author
+%3Aigneus">matthiasnoback/symfony-console-form</a> Symfony bundle</li>
+        <li>implementing a feature for the widely used <a href="https://github.com/rails/thor/pull/739">thor</a> Ruby gem</li>
+        <li>fixes to the <a href="https://github.com/frescobaldi/frescobaldi/pulls?q=is%3Apr+is%3Aclosed+author%3Aigneus">Frescobaldi</a> music notation editor</li>
+        <li>proposed fixes to the <a href="https://github.com/chargebee/chargebee-ruby/pulls?q=author%3Aigneus+">ChargeBee Ruby SDK</a></li>
+        <li>regression report for <a href="https://github.com/symfony/symfony/issues/31175">Symfony Normalizer</a></li>
+        <li>bug report and fix proposal for the <a href="https://github.com/Pipoline/rocket-python/issues/50">RocketChat Python SDK</a></li>
+      </ul>
+
+      <h3>Personal projects</h3>
+      <p>
+        My active personal projects are somewhat monothematic,
+        crystalizing around two main topics:
+      </p>
 
       <h4>1. Church calendar</h4>
       <ul class="loose">
         <li>
           <a href="https://github.com/igneus/calendarium-romanum">calendarium-romanum</a>
-          <p>
-            Ruby gem aspiring to become the most complete
-            FOSS implementation of the Roman Catholic liturgical calendar.
-          </p>
+          - Ruby gem computing the Roman Catholic liturgical calendar
         </li>
 
         <li>
-          <a href="https://github.com/igneus/church-calendar-api">Church Calendar API</a> ::
-          <a href="http://calapi.inadiutorium.cz/">http://calapi.inadiutorium.cz</a>
-          <p>
-            Public calendar API built on top of calendarium-romanum.
-            Makes results computed by calendarium-romanum available
-            to any application able to make a GET request.
-            Unlike most of my other projects, it seems to be
-            <a href="https://github.com/search?q=calapi.inadiutorium.cz&type=Code">somewhat popular</a>.
-          </p>
-        </li>
-
-        <li>
-          <a href="">calrom</a>
-          <p>
-            Command line interface for calendarium-romanum.
-          </p>
+          applications making good use of it:
+          <ul>
+            <li>
+              <a href="https://github.com/igneus/church-calendar-api">Church Calendar API</a>
+            </li>
+            <li>
+              <a href="https://github.com/calendarium-romanum/calrom">calrom</a> - command line interface
+            </li>
+            <li>
+              <a href="https://github.com/igneus/epiphany-proclamation-chant-generator">script</a> generating notation for a yearly solemn announcement of principal feasts
+            </li>
+          </ul>
         </li>
       </ul>
 
@@ -320,11 +334,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         <li>
           <a href="https://github.com/igneus/gly">gly</a>
           <p>
-            Custom language for gregorian chant encoding,
-            optimized for user happiness and translating to
-            <a href="http://gregorio-project.github.io/gabc/index.html">gabc</a>
-            (which is the de facto standard language for the same
-            purpose, but not very user-friendly).
+            Custom language for gregorian chant notation.
+            <a href="http://gregorio-project.github.io/gabc/index.html">Gabc</a>
+            (the de facto standard language for the same purpose)
+            redesigned to fit my needs and preferences.
           </p>
         </li>
 
@@ -339,9 +352,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         <li>
           <a href="https://github.com/igneus/pslm">pslm</a>
           <p>
-            Automates pointing of psalm texts for various
-            chant tunes.
-            Heavily used in my typesetting projects.
+            Utility pointing psalm texts for various chant tunes.
+            Heavily used in my LaTeX-based typesetting projects.
+            There is also a simple static <a href="http://zalmy.inadiutorium.cz/">website</a>
+            providing the same kind of service interactively to the end users.
           </p>
         </li>
 
@@ -350,45 +364,29 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
           http://www.inadiutorium.cz</a>
           <p>
             Web presentation of my musical settings
-            of the Catholic
+            of the Roman Catholic
             <a href="http://en.wikipedia.org/wiki/Liturgy_of_the_Hours">Divine Office</a>
             in Czech translation
-            + comprehensive catalogue of other existing musical
-            settings
-            + the place where I blog about Liturgy of the Hours,
-            liturgical music and related topics.
+            + comprehensive catalogue of musical settings by other authors
+            + the place where I blog about related topics.
           </p>
         </li>
       </ul>
 
-      <h3>Inactive software projects</h3>
+      <h4>3. Other</h4>
       <ul class="loose">
         <li>
           <a href="http://sourceforge.net/projects/freevikings/">freeVikings</a>
           <p>
-            Attempt to make a free clone of the famous Lost Vikings.
+            Attempt to make a free clone of the famous Lost Vikings game.
             Developed 2004-2009.
             (i.e. back in the <a href="https://web.archive.org/web/20090202080827/http://raa.ruby-lang.org:80/project/freevikings/">RAA</a> days.)
-          </p>
-          <p class="petit">
-            A bit of vanity:
-            <a href="http://freevikings.cvs.sourceforge.net/viewvc/freevikings/freeVikings/freevikings.rb?revision=1.1&view=markup">here</a>
-            might be the oldest (or at least the oldest publicly
-            available) bit of Ruby code written in Czech
-            Republic. If you happen to know an older one, please e-mail me.
+            The oldest part of the
+            <a href="http://freevikings.cvs.sourceforge.net/">code</a>
+            may be the oldest publicly available bit of Ruby written in Czech
+            Republic.
           </p>
         </li>
-      </ul>
-    </div>
-
-
-    <div class="box">
-      <h2>Interests</h2>
-
-      <ul>
-        <li>liturgy and liturgical studies</li>
-        <li>Catholic theology in general</li>
-        <li>music (singing, playing, researching)</li>
       </ul>
     </div>
   </body>
