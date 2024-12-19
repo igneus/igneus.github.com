@@ -42,7 +42,11 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
       .concise .verbose { display: none; }
 
-      @media print { .box { border-left: none; padding: none; } }
+      @media print {
+        .box { border-left: none; padding: none; }
+        h1, h2 { break-after: avoid; }
+        #footer { display: none; }
+      }
     </style>
 
     <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'/>
@@ -67,7 +71,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         <a href="http://stackoverflow.com/users/2034213/jakub-pavl%C3%ADk" title="A couple of answers to interesting questions which happened to lay unanswered for a long time.">stackoverflow</a>
       </p>
 
-      <p>
+      <p class="verbose">
         Programmer and Linux user since high school years.
         Most of programming career so far spent developing
         web backends.
@@ -90,7 +94,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
           <td class="exp-label">05-11/2024</td>
           <td>
             analysis and documentation of a Ruby on Rails application
-            for purposes of rewrite
+            for purposes of a rewrite
           </td>
         </tr>
         <tr>
@@ -192,7 +196,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "Má. Mě." <span class="large">&#x263a;</span>
       </p>
 
-      <h2>(Human) Languages</h2>
+      <h2><span class="verbose">(Human)</span> Languages</h2>
 
       <ul>
         <li>Czech (mother tongue)</li>
@@ -259,7 +263,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
               </ul>
             </li>
 
-            <li>
+            <li class="verbose">
               XML - I have a soft spot for XML and related technologies
               (XHTML, XSLT, XPath, XQuery, BaseX database, ...)
             </li>
@@ -274,7 +278,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
           Docker - basic knowledge &amp; experience
         </li>
 
-        <li>
+        <li class="verbose">
           Typesetting
           <ul>
             <li>LaTeX</li>
