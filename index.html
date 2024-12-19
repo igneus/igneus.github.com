@@ -39,6 +39,8 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       .large { font-size: 140%; }
       .petit { font-size: 90%; }
 
+      .concise .verbose { display: none; }
+
       @media print { .box { border-left: none; padding: none; } }
     </style>
 
@@ -184,7 +186,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         </tr>
       </table>
 
-      <p class="quote">
+      <p class="quote verbose">
         "Teologie ... to nemá s programováním nic společného, že ne?"
         "Má. Mě." <span class="large">&#x263a;</span>
       </p>
@@ -195,8 +197,8 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         <li>Czech (mother tongue)</li>
         <li>German (~B1)</li>
         <li>English (~B1)</li>
-        <li>Russian (passive knowledge)</li>
-        <li>Latin, New Testament Greek (intermediate, mostly passive knowledge)</li>
+        <li class="verbose">Russian (passive knowledge)</li>
+        <li class="verbose">Latin, New Testament Greek (intermediate, mostly passive knowledge)</li>
       </ul>
     </div>
 
@@ -287,7 +289,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       </ul>
     </div>
 
-    <div class="box" id="online">
+    <div class="box verbose" id="online">
       <h2>Code online</h2>
 
       <h3>Contributions to third-party projects</h3>
@@ -399,4 +401,15 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
       </ul>
     </div>
   </body>
+
+  <script type="text/javascript">
+    const hideVerbose = () => {
+      if (window.location.hash.includes('concise')) {
+        document.querySelector('body').classList.add('concise');
+      }
+    };
+
+    window.onload = hideVerbose;
+    window.onhashchange = hideVerbose;
+  </script>
 </html>
