@@ -402,9 +402,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
   <script type="text/javascript">
     const hideVerbose = () => {
-      if (window.location.hash.includes('concise')) {
-        document.querySelector('body').classList.add('concise');
-      }
+      document
+        .querySelector('body')
+        .classList
+        [window.location.hash.includes('concise') ? 'add' : 'remove']('concise');
     };
 
     window.onload = hideVerbose;
