@@ -42,6 +42,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
       .concise .verbose { display: none; }
 
+      .expandable .expandable-details { display: none; }
+      .expandable.expanded .expandable-summary { display: none; }
+      .expandable.expanded .expandable-details { display: block; }
+
       @media print {
         .box { border-left: none; padding: none; }
         h1, h2 { break-after: avoid; }
@@ -154,57 +158,67 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
       <h2 id="education">Education</h2>
 
-      <table cellspacing="0">
-        <tr>
-          <td class="exp-label">2014-2016, 2017-2019</td>
-          <td>
-            Bachelor (Bc.) + Master (Mgr.) programme "Theology"
-            at the <a href="http://www.tf.jcu.cz/">Faculty of Theology</a>,
-            University of South Bohemia in České Budějovice.
-          </td>
-        </tr>
+      <div class="expandable">
+        <div class="expandable-summary">
+          <p>Master's degree (non-technical). <a href="#" class="expandable-expand">Show details</a></p>
+        </div>
+        <div class="expandable-details">
+          <table cellspacing="0">
+            <tr>
+              <td class="exp-label">2014-2016, 2017-2019</td>
+              <td>
+                Bachelor (Bc.) + Master (Mgr.) programme "Theology"
+                at the <a href="http://www.tf.jcu.cz/">Faculty of Theology</a>,
+                University of South Bohemia in České Budějovice.
+              </td>
+            </tr>
 
-        <tr>
-          <td class="exp-label">2007-2014</td>
-          <td>
-            Master programme "Catholic Theology"
-            at the <a href="https://www.ktf.cuni.cz/">Catholic Theological Faculty</a>,
-            Charles University, Prague.
-            Terminated without reaching the degree.
-            2013 I <a href="#topinfo">started working fulltime</a>
-            and didn't manage to finish my thesis.
-          </td>
-        </tr>
+            <tr>
+              <td class="exp-label">2007-2014</td>
+              <td>
+                Master programme "Catholic Theology"
+                at the <a href="https://www.ktf.cuni.cz/">Catholic Theological Faculty</a>,
+                Charles University, Prague.<br/>
+                Failed to finish my thesis while <a href="#topinfo">working fulltime</a>.
+              </td>
+            </tr>
 
-        <tr>
-          <td class="exp-label">2011</td>
-          <td>
-            one semester
-            at the <a href="https://www.uni-erfurt.de/theol/">Catholic Theological Faculty</a>,
-            University Erfurt (Germany)
-          </td>
-        </tr>
+            <tr>
+              <td class="exp-label">2011</td>
+              <td>
+                one semester
+                at the <a href="https://www.uni-erfurt.de/theol/">Catholic Theological Faculty</a>,
+                University Erfurt (Germany)
+              </td>
+            </tr>
 
-        <tr>
-          <td class="exp-label">1999-2007</td>
-          <td>Gymnázium Kladno</td>
-        </tr>
-      </table>
+            <tr>
+              <td class="exp-label">1999-2007</td>
+              <td>Gymnázium Kladno</td>
+            </tr>
+          </table>
+        </div>
+      </div>
 
-      <p class="quote verbose">
-        "Teologie ... to nemá s programováním nic společného, že ne?"
-        "Má. Mě." <span class="large">&#x263a;</span>
-      </p>
+      <h2>Languages</h2>
 
-      <h2><span class="verbose">(Human)</span> Languages</h2>
-
-      <ul>
-        <li>Czech (mother tongue)</li>
-        <li>German (~B1)</li>
-        <li>English (~B1)</li>
-        <li class="verbose">Russian (passive knowledge)</li>
-        <li class="verbose">Latin, New Testament Greek (intermediate, mostly passive knowledge)</li>
-      </ul>
+      <div class="expandable">
+        <div class="expandable-summary">
+          <p>
+            English, German and
+            <a href="#" class="expandable-expand">more</a>
+          </p>
+        </div>
+        <div class="expandable-details">
+          <ul>
+            <li>Czech (mother tongue)</li>
+            <li>German (~B1)</li>
+            <li>English (~B1)</li>
+            <li class="verbose">Russian (passive knowledge)</li>
+            <li class="verbose">Latin, New Testament Greek (intermediate, mostly passive knowledge)</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="box">
@@ -417,7 +431,22 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         [window.location.hash.includes('concise') ? 'add' : 'remove']('concise');
     };
 
-    window.onload = hideVerbose;
+    const initExpandLinks = () => {
+      document
+        .querySelectorAll('.expandable').forEach(expandable => {
+          expandable.querySelectorAll('a.expandable-expand').forEach(link => {
+            link.addEventListener('click', (event) => {
+              event.preventDefault();
+              expandable.classList.toggle('expanded');
+            })
+          });
+        });
+    };
+
+    window.onload = () => {
+      hideVerbose();
+      initExpandLinks();
+    };
     window.onhashchange = hideVerbose;
   </script>
 </html>
